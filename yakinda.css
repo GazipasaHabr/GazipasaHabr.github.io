@@ -1,0 +1,82 @@
+/* Genel ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Dikey olarak düzenle */
+    height: 100vh; /* Tüm yüksekliği kapla */
+}
+
+header {
+    background-color: #000; /* Üst menü arka plan rengi */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Üst menü içindeki boşluk */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Menüyü ortalar */
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Menü öğeleri arasındaki boşluk */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Menü yazı rengi */
+    font-weight: bold;
+    font-size: 14px; /* Menü yazı boyutu */
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f1c40f; /* Hover rengi sarı */
+}
+
+.menu-icon {
+    display: none;
+}
+
+main {
+    flex: 1; /* Ana bölüm genişliği tam olsun */
+    display: flex; 
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    background-color: #f9e79f; /* Arka plan rengi sarı */
+}
+
+.center-message {
+    text-align: center; /* Metni ortalar */
+}
+
+.center-message h1 {
+    font-size: 36px; /* Yazı boyutu */
+    color: #333; /* Yazı rengi */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Mobilde menüyü gizle */
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}

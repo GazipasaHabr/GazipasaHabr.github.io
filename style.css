@@ -1,0 +1,67 @@
+/* Genel ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000; /* Üst menü arka plan rengi */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Üst menü içindeki boşluk */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Menüyü ortalar */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Menü öğeleri arasındaki boşluk */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Menü yazı rengi */
+    font-weight: bold;
+    font-size: 14px; /* Menü yazı boyutu */
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f1c40f; /* Hover rengi sarı */
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Ana içerik stilleri */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Dikeyde ortala */
+    align-items: center; /* Yatayda ortala */
+    height: 80vh; /* Ana bölüm yüksekliği */
+    text-align: center; /* Metin ortalama */
+}
+
+main h1 {
+    font-size: 36px; /* Başlık boyutu */
+    margin-bottom: 10px; /* Başlık ile açıklama arası boşluk */
+}
+
+main p {
+    font-size: 18px; /* Açıklama yazı boyutu */
+}
